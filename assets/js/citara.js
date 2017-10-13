@@ -24,7 +24,7 @@ $(function(){
     minus = $('.testimonials').offset().top;
     both = scroll - minus;
     userparalax = both / 3 + 180;
-    if(scroll >= $('.testimonials').scrollTop()){
+    if(scroll >= $('.testimonials').scrollTop() && $(window).width() > 1128){
       $('.avatar').css('margin-top', '-' + both / 4 + 'px')
       $('.usertestimonial').css('margin-top', '-' + userparalax  + 'px')
     }
@@ -35,7 +35,7 @@ $(function(){
     minus = $('.hero').offset().top;
     both = scroll - minus;
     userparalax = both / 3 + 180;
-    if(scroll >= $('.hero').scrollTop()){
+    if(scroll >= $('.hero').scrollTop() && $(window).width() > 1128){
       $('.herosubtitle, .titleimg, .herosub').css('margin-top', '-' + both / 4 + 'px')
     }
   });
@@ -45,7 +45,7 @@ $(function(){
     minus = $('.hiw').offset().top;
     both = scroll - minus;
     userparalax = both / 3 + 180;
-    if(scroll >= $('.hiw').scrollTop()){
+    if(scroll >= $('.hiw').scrollTop() && $(window).width() > 1128){
       $('.hiwtitle, .hiwsub').css('margin-top', '-' + both / 4 + 'px')
       $('.notebook').css('margin-top', '-' + both / 3 + 'px').css('margin-bottom', + both / 3 + 'px')
     }
@@ -106,7 +106,7 @@ $(function(){
 
   });
   $(document).on('mousewheel', function(e) {
-    if($('.home').hasClass('activepage')){
+    if($('.home').hasClass('activepage') && $(window).width() > 1128){
       setTimeout(function () {
         var url = window.location.href;
         if(e.originalEvent.wheelDelta / 120 > 0) {

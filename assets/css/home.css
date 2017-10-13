@@ -620,6 +620,7 @@ body{
 }
 .prod{
   opacity: 0;
+  position: absolute;
   visibility: hidden;
   transition: opacity 0.4s ease;
   background-color: #470da8;
@@ -627,7 +628,7 @@ body{
   background-repeat: no-repeat;
   overflow-x: hidden;
   margin-left: 80px;
-  height: 100vh;
+  height: 0px;
   position: relative;
   overflow-y: scroll;
   background-position: 900px 130px;
@@ -748,4 +749,173 @@ body{
   width: calc(43% - 40px);
   float: left;
   margin-top: 10px;
+}
+
+
+@media (max-width: 1129px) {
+  body{
+    overflow: visible;
+  }
+  .ctralogo {
+    background-image: url(../img/citaralogo2.png);
+    width: 135px;
+    height: 45px;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    -webkit-background-size: contain;
+    z-index: 20000;
+    background-size: contain;
+  }
+  .lateral-menu{
+    left: -80px;
+  }
+  .hiw, .products, .testimonials, .hero, .contactsection{
+    margin-left: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .testimonal{
+    transform: translate(0, -50%);
+    top: 50%;
+    position: absolute;
+  }
+  .notebook{
+    background-image: none;
+    height: auto;
+  }
+  .card{
+    float: left;
+    width: 90%;
+    opacity: 0.6;
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+  }
+  .hiwdesc{
+    width: 70% !important;
+    padding-right: 10px;
+  }
+  .card:hover{
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    width: 90%;
+  }
+  .cards {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1050px) {
+}
+@media (max-width: 987px) {
+  .product{
+    width: 90%;
+  }
+}
+@media(max-width: 480px){
+  .subject {
+    border-radius: 2px;
+    margin-top: 0;
+    margin-left: 20px;
+    width: 175px;
+    height: 28px;
+    -webkit-box-shadow: 0px 5px 0px transparent;
+    box-shadow: 0px 5px 0px transparent;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    background-color: #F44336;
+    transition: margin-left 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    color: #fff;
+  }
+  .herocontent {
+    margin-left: 50px;
+    padding-top: calc(50vh - 60px);
+  }
+  .producttitle {
+    font-size: 42px;
+    line-height: 44px;
+    margin-right: 20px;
+  }
+  .titleimg {
+    background-image: url(../img/citaraheader.png);
+    max-width: 465px;
+    background-repeat: no-repeat;
+    height: 45px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-size: contain;
+  }
+  .titlesections {
+    font-size: 49px;
+    line-height: 40px;
+  }
+  .usertestimonial {
+    height: 271px;
+    width: 100%;
+    border-style: none;
+    margin-top: 88px;
+    margin-left: 0px;
+    max-width: 635px;
+  }
+  .balls{
+    display: none;
+  }
+  .socialmedia{
+    z-index: 129380912;
+    bottom: 20px;
+  }
+  .mousepop{
+    display: none !important;
+    bottom: 10px;
+  }
+  .ctralogo{
+    bottom: 10px;
+  }
+  .usermajor {
+    margin-left: 0px;
+  }
+  .userquote {
+    max-width: 292px;
+    margin-top: 20px;
+    font-size: 13px;
+    margin-left: 0px;
+    margin-right: 69px;
+    text-align: justify;
+  }
+  .directional{
+    margin: 20px 0;
+  }
+  .testimonials {
+    background-color: #1d2122;
+    height: 100vh;
+    padding-top: 181px;
+    -webkit-box-sizing: content-box ;
+    box-sizing: content-box ;
+  }
+  .usermajor {
+    font-size: 45px;
+    font-family: "Museo Sans";
+    color: rgb(231, 235, 235);
+    line-height: 0.903;
+    text-align: left;
+    /* margin-left: 133px; */
+    margin-top: -61px;
+  }
+  .ctcttitle{
+    font-size: 25px;
+  }
+  .contactitem {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .hiw, .products, .testimonials, .contactsection{
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
 }
