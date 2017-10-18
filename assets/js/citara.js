@@ -142,6 +142,8 @@ $(function()
                     else
                     {
                         $('.balls').children().eq(sibling + 2).click()
+                        $('.menuitem').removeClass('active');
+                        $('.menuitem').children().eq(((sibling + 2)/2)).addClass('active');
                     }
                     console.log(sibling);
                 }
