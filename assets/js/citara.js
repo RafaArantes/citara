@@ -145,6 +145,7 @@ $(function()
                         $('.menuitem').removeClass('active');
                         $('.menuitem').children().eq(((sibling + 2)/2)).addClass('active');
                         console.log( $('.menuitem').children().eq(((sibling + 2)/2)));
+                        console.log(((sibling + 2)/2)));
                     }
                     console.log(sibling);
                 }
