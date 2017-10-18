@@ -184,37 +184,59 @@ body{
   -webkit-background-size: 65px;
   background-size: 65px;
 }
-.citarahiw{
-  -webkit-background-size: 50px;
-  background-size: 50px;
-}
-.contact{
-  -webkit-background-size: 60px;
-  background-size: 60px;
-}
-.productsmenu{
-  -webkit-background-size: 68px;
-  background-size: 68px;
-}
-.teamembers{
-  -webkit-background-size: 60px;
-  background-size: 60px;
-}
 .lateral-menu ul .main:hover{
   -webkit-box-shadow: inset 5px 0px 0px #00bb93;
   box-shadow: inset 5px 0px 0px #00bb93;
 }
-.lateral-menu ul .productsmenu:hover{
-  -webkit-box-shadow: inset 5px 0px 0px #6500ba;
-  box-shadow: inset 5px 0px 0px #6500ba;
-}
+
 .lateral-menu ul .main.active{
   background-color: #00bb93;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
+.citarahiw{
+  -webkit-background-size: 50px;
+  background-size: 50px;
+}
+.lateral-menu ul .citarahiw:hover{
+  -webkit-box-shadow: inset 5px 0px 0px #fa8d33;
+  box-shadow: inset 5px 0px 0px #fa8d33;
+}
+.lateral-menu ul .citarahiw.active{
+  background-color: #fa8d33;
+}
+.productsmenu{
+  -webkit-background-size: 68px;
+  background-size: 68px;
+}
+.lateral-menu ul .productsmenu:hover{
+  -webkit-box-shadow: inset 5px 0px 0px #6500ba;
+  box-shadow: inset 5px 0px 0px #6500ba;
+}
 .lateral-menu ul .productsmenu.active{
   background-color: #6500ba;
+}
+.contact{
+  -webkit-background-size: 60px;
+  background-size: 60px;
+}
+.lateral-menu ul .contact:hover{
+  -webkit-box-shadow: inset 5px 0px 0px #088ea7;
+  box-shadow: inset 5px 0px 0px #088ea7;
+}
+.lateral-menu ul .contact.active{
+  background-color: #088ea7;
+}
+.teamembers{
+  -webkit-background-size: 60px;
+  background-size: 60px;
+}
+.lateral-menu ul .teamembers:hover{
+  -webkit-box-shadow: inset 5px 0px 0px #444;
+  box-shadow: inset 5px 0px 0px #444;
+}
+.lateral-menu ul .teamembers.active{
+  background-color: #444;
 }
 .ctralogo{
   background-image: url(../img/citaralogo2.png);
@@ -279,6 +301,7 @@ body{
   margin-bottom: 35px;
 }
 .subtitle{
+  padding-right: 40px;
   max-width: 496px;
   font-size: 15px;
   position: relative;
@@ -616,7 +639,8 @@ body{
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease;
-  display: none;
+  height: 0px;
+  overflow-x: hidden;
 }
 .prod{
   opacity: 0;
@@ -630,10 +654,10 @@ body{
   margin-left: 80px;
   height: 0px;
   position: relative;
-  overflow-y: scroll;
   background-position: 900px 130px;
 }
 .activepage{
+  height: auto;
   display: block;
   visibility: visible;
   opacity: 1;
@@ -754,7 +778,7 @@ body{
 
 @media (max-width: 1129px) {
   body{
-    overflow: visible;
+    overflow-y: visible !important;
   }
   .ctralogo {
     background-image: url(../img/citaralogo2.png);
@@ -762,13 +786,28 @@ body{
     height: 45px;
     position: absolute;
     bottom: 20px;
-    left: 100px;
+    left: 90px;
     -webkit-background-size: contain;
+    -webkit-transition: left 0.2s ease;
+    -o-transition: left 0.2s ease;
+    transition: left 0.2s ease;
     z-index: 20000;
     background-size: contain;
   }
   .lateral-menu{
     left: -80px;
+    -webkit-transition: left 0.2s ease;
+    -o-transition: left 0.2s ease;
+    transition: left 0.2s ease;
+  }
+  .lateral-menu.activemenu{
+    left: 0px;
+  }
+  .lateral-menu.activemenu .ctralogo{
+    left: 10px;
+  }
+  .prod{
+    margin-left: 0;
   }
   .hiw, .products, .testimonials, .hero, .contactsection{
     margin-left: 0;
@@ -816,7 +855,37 @@ body{
     width: 90%;
   }
 }
-@media(max-width: 480px){
+@media(max-width: 780px){
+  .lateral-responsive-menu{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: -25px;
+    position: fixed;
+    margin-top: -25px;
+    top: 50%;
+    z-index: 129381203;
+  }
+  .prodinfo {
+      margin-left: 50px;
+  }
+  .option, .option2{
+    display: none;
+  }
+  .active .option, .active .option2{
+    display: block;
+    }
+  .prodeae .product {
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 80%;
+  }
+  .testimonal{
+    left: 0;
+  }
   .subject {
     border-radius: 2px;
     margin-top: 0;
@@ -856,12 +925,12 @@ body{
     line-height: 40px;
   }
   .usertestimonial {
+    margin: 0 auto;
     height: 271px;
     width: 100%;
     border-style: none;
     margin-top: 88px;
-    margin-left: 0px;
-    max-width: 635px;
+    /* margin-left: 0px; */
   }
   .balls{
     display: none;
@@ -877,35 +946,44 @@ body{
   .ctralogo{
     bottom: 10px;
   }
-  .usermajor {
-    margin-left: 0px;
+
+  .avatar{
+    margin: 0 auto;
   }
   .userquote {
-    max-width: 292px;
-    margin-top: 20px;
-    font-size: 13px;
-    margin-left: 0px;
-    margin-right: 69px;
-    text-align: justify;
+      padding: 0 5px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 5px;
+      max-width: 521px;
+      margin-top: 20px;
+      font-size: 13px;
+      /* margin-left: 0px; */
+      /* margin-right: 69px; */
+      /* text-align: justify; */
   }
-  .directional{
-    margin: 20px 0;
+  .directional {
+      margin: 20px auto;
+  }
+  .product {
+    width: 95%;
   }
   .testimonials {
     background-color: #1d2122;
-    height: 100vh;
+    height: auto;
     padding-top: 181px;
-    -webkit-box-sizing: content-box ;
-    box-sizing: content-box ;
+    -webkit-box-sizing: border-box ;
+    box-sizing: border-box ;
   }
   .usermajor {
-    font-size: 45px;
-    font-family: "Museo Sans";
-    color: rgb(231, 235, 235);
-    line-height: 0.903;
-    text-align: left;
-    /* margin-left: 133px; */
-    margin-top: -61px;
+      font-size: 45px;
+      margin: 0 auto;
+      font-family: "Museo Sans";
+      color: rgb(231, 235, 235);
+      line-height: 0.903;
+      text-align: center;
+      /* margin-left: 133px; */
+      margin-top: -61px;
   }
   .ctcttitle{
     font-size: 25px;
@@ -917,5 +995,22 @@ body{
   .hiw, .products, .testimonials, .contactsection{
     padding-left: 50px;
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 330px) {
+  .userquote{
+    padding: 0 20px;
+  }
+  .testimonials{
+    padding-left: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  .hiw, .products, .contactsection{
+    padding-left: 25px;
+    padding-bottom: 50px;
+  }
+  .herocontent{
+    margin-left: 25px;
   }
 }
