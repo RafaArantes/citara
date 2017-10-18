@@ -82,6 +82,7 @@ $(function()
             var spliter = url.split('#')[1];
             $('.screen').removeClass('screenactive');
             $('.' + spliter + '').addClass('screenactive');
+            scrollTo = true;
         }, 1100);
         $('.ball').removeClass('screenactive')
         $(this).addClass('screenactive')
@@ -96,7 +97,7 @@ $(function()
             {
                 window.location.hash = href;
             });
-        scrollTo = true;
+        
         return false;
 
     });
