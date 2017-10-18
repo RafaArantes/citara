@@ -965,6 +965,11 @@ body{
   .directional {
       margin: 20px auto;
   }
+  .testimonials{
+    padding-left: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
   .product {
     width: 95%;
   }
