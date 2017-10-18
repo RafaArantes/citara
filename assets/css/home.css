@@ -965,20 +965,17 @@ body{
   .directional {
       margin: 20px auto;
   }
-  .testimonials{
-    padding-left: 0;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-  }
   .product {
     width: 95%;
   }
   .testimonials {
     background-color: #1d2122;
     height: auto;
-    padding-top: 181px;
-    -webkit-box-sizing: border-box ;
-    box-sizing: border-box ;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 181px 0px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
   }
   .usermajor {
       font-size: 45px;
@@ -997,7 +994,7 @@ body{
     width: 100%;
     margin-bottom: 40px;
   }
-  .hiw, .products, .testimonials, .contactsection{
+  .hiw, .products, .contactsection{
     padding-left: 50px;
     padding-bottom: 50px;
   }
