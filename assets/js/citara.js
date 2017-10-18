@@ -76,60 +76,61 @@ $(function()
     $('.ball, .menuitem').click(function()
     {
 
-        if (scrollTo === true)
+        setTimeout(function()
         {
-            scrollTo = false;
-            setTimeout(function()
-            {
-                var url = window.location.href;
-                var spliter = url.split('#')[1];
-                $('.screen').removeClass('screenactive');
-                $('.' + spliter + '').addClass('screenactive');
-            }, 1100);
-            $('.ball').removeClass('screenactive')
-            $(this).addClass('screenactive')
-            var ball = $(this).attr('class').split(' ')[0];
-            var href = $.attr(this, 'href');
+            var url = window.location.href;
+            var spliter = url.split('#')[1];
+            $('.screen').removeClass('screenactive');
+            $('.' + spliter + '').addClass('screenactive');
+        }, 1100);
+        $('.ball').removeClass('screenactive')
+        $(this).addClass('screenactive')
+        var ball = $(this).attr('class').split(' ')[0];
+        var href = $.attr(this, 'href');
 
-            $root.animate(
-                {
-                    scrollTop: $(href).offset().top
-                }, 1000,
-                function()
-                {
-                    window.location.hash = href;
-                });
-            scrollTo = true;
-            return false;
-        }
+        $root.animate(
+            {
+                scrollTop: $(href).offset().top
+            }, 1000,
+            function()
+            {
+                window.location.hash = href;
+            });
+        scrollTo = true;
+        return false;
 
     });
     $(document).on('mousewheel', function(e)
     {
 
-        if ($('.home').hasClass('activepage') && $(window).width() > 1128)
+        if (scrollTo === true)
         {
+            scrollTo = false;
 
-            var url = window.location.href;
-            if (e.originalEvent.wheelDelta / 120 > 0)
+            if ($('.home').hasClass('activepage') && $(window).width() > 1128)
             {
-                $(window).off("scroll")
-                var url = window.location.href;
-                var spliter = url.split('#')[1];
-                var sibling = $('div[href="#' + spliter + '"].screenactive').index();
-                $('.balls').children().eq(sibling - 2).click()
-                console.log(sibling);
-            }
-            else
-            {
-                $(window).off("scroll")
-                var url = window.location.href;
-                var spliter = url.split('#')[1];
-                var sibling = $('div[href="#' + spliter + '"].screenactive').index();
-                $('.balls').children().eq(sibling + 2).click()
-                console.log(sibling);
-            }
 
+                var url = window.location.href;
+                if (e.originalEvent.wheelDelta / 120 > 0)
+                {
+                    $(window).off("scroll")
+                    var url = window.location.href;
+                    var spliter = url.split('#')[1];
+                    var sibling = $('div[href="#' + spliter + '"].screenactive').index();
+                    $('.balls').children().eq(sibling - 2).click()
+                    console.log(sibling);
+                }
+                else
+                {
+                    $(window).off("scroll")
+                    var url = window.location.href;
+                    var spliter = url.split('#')[1];
+                    var sibling = $('div[href="#' + spliter + '"].screenactive').index();
+                    $('.balls').children().eq(sibling + 2).click()
+                    console.log(sibling);
+                }
+
+            }
         }
     });
 
