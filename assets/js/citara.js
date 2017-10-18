@@ -97,7 +97,7 @@ $(function()
             {
                 window.location.hash = href;
             });
-        
+
         return false;
 
     });
@@ -118,7 +118,15 @@ $(function()
                     var url = window.location.href;
                     var spliter = url.split('#')[1];
                     var sibling = $('div[href="#' + spliter + '"].screenactive').index();
-                    $('.balls').children().eq(sibling - 2).click()
+                    if ((sibling - 2) < 0)
+                    {
+                        scrollTo = true;
+                    }
+                    else
+                    {
+                        $('.balls').children().eq(sibling - 2).click()
+                    }
+
                     console.log(sibling);
                 }
                 else
@@ -127,7 +135,14 @@ $(function()
                     var url = window.location.href;
                     var spliter = url.split('#')[1];
                     var sibling = $('div[href="#' + spliter + '"].screenactive').index();
-                    $('.balls').children().eq(sibling + 2).click()
+                    if ((sibling + 2) > 8)
+                    {
+                        scrollTo = true;
+                    }
+                    else
+                    {
+                        $('.balls').children().eq(sibling + 2).click()
+                    }
                     console.log(sibling);
                 }
 
