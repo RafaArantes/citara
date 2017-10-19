@@ -12,8 +12,8 @@ body{
   background-image: url(../img/backgroundimg.png);
 }
 .menubutton{
-  width: 46px;
-  height: 43px;
+  width: 135px;
+  height: 45px;
   cursor: pointer;
   background-image: url(../img/citaralogo2.png);
   position: fixed;
