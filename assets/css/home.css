@@ -663,6 +663,7 @@ body{
 }
 .activepage{
   height: auto;
+  min-height: 100vh;
   display: block;
   visibility: visible;
   opacity: 1;
