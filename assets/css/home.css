@@ -446,8 +446,8 @@ body{
 
 .devmind{
   background-position: top left;
-  -webkit-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-image: url(../img/devmind.png);
   transition: background-image 0.2s ease;
 }
