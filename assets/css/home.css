@@ -443,6 +443,11 @@ body{
 .smartenergy:hover{
   background-image: url(../img/smarthover.png);
 }
+
+.devmind{
+  background-image: url(../img/devmind.png);
+  transition: background-image 0.2s ease;
+}
 .product:hover{
   margin-left: 20px;
 }
