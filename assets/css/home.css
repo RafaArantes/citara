@@ -190,9 +190,8 @@ body{
 }
 
 .lateral-menu ul .main.active{
-  background-color: #00bb93;
-  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 5px 0px 0px #00bb93;
+  box-shadow: inset 5px 0px 0px #00bb93;
 }
 .citarahiw{
   -webkit-background-size: 50px;
@@ -203,7 +202,8 @@ body{
   box-shadow: inset 5px 0px 0px #fa8d33;
 }
 .lateral-menu ul .citarahiw.active{
-  background-color: #fa8d33;
+  -webkit-box-shadow: inset 5px 0px 0px #fa8d33;
+  box-shadow: inset 5px 0px 0px #fa8d33;
 }
 .productsmenu{
   -webkit-background-size: 68px;
@@ -214,7 +214,8 @@ body{
   box-shadow: inset 5px 0px 0px #6500ba;
 }
 .lateral-menu ul .productsmenu.active{
-  background-color: #6500ba;
+  -webkit-box-shadow: inset 5px 0px 0px #6500ba;
+  box-shadow: inset 5px 0px 0px #6500ba;
 }
 .contact{
   -webkit-background-size: 60px;
@@ -225,7 +226,8 @@ body{
   box-shadow: inset 5px 0px 0px #088ea7;
 }
 .lateral-menu ul .contact.active{
-  background-color: #088ea7;
+  -webkit-box-shadow: inset 5px 0px 0px #088ea7;
+  box-shadow: inset 5px 0px 0px #088ea7;
 }
 .teamembers{
   -webkit-background-size: 60px;
@@ -236,7 +238,8 @@ body{
   box-shadow: inset 5px 0px 0px #444;
 }
 .lateral-menu ul .teamembers.active{
-  background-color: #444;
+  -webkit-box-shadow: inset 5px 0px 0px #444;
+  box-shadow: inset 5px 0px 0px #444;
 }
 .ctralogo{
   background-image: url(../img/citaralogo2.png);
