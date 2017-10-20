@@ -6,7 +6,7 @@
 		    "subject": "Internet of Things",
         "product_img": "url(../img/smartproduct.png)",
         "prodpage": {
-          "title": "../img/smartenergy.png",
+          "title": "assets/img/smartenergy.png",
           "subtitle": "Your intelligent assistant in the control of energy consumption",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of energy consumption",
@@ -21,7 +21,7 @@
 	    "subject": "Internet of Things",
         "product_img": "url(../img/smartwater.png)",
         "prodpage": {
-          "title": "../img/smartwtr.png",
+          "title": "assets/img/smartwtr.png",
           "subtitle": "Your intelligent assistant in the control of water consumption",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of water consumption",
@@ -36,7 +36,7 @@
 	    "subject": "Internet of Things",
         "product_img": "url(../img/smartaccess.png)",
         "prodpage": {
-          "title": "../img/smartacs.png",
+          "title": "assets/img/smartacs.png",
           "subtitle": "Security of your resources without worries",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of Accessible Resources",
@@ -51,7 +51,7 @@
 		    "subject": "Software",
         "product_img": "url(../img/devmind.png)",
         "prodpage": {
-          "title": "../img/devmind.png",
+          "title": "assets/img/devmind.png",
           "subtitle": "Intelligent IDE to save time and headaches",
           "forwhom": "Developers who want to program anywhere",
           "whatis": " An on-line IDE that integrates with user repositories and provides users development environment anywhere",
@@ -66,7 +66,7 @@
 		    "subject": "Software",
         "product_img": "url(../img/easyodonto.png)",
         "prodpage": {
-          "title": "../img/easyodonto.png",
+          "title": "assets/img/easyodonto.png",
           "subtitle": "Has never been so easy to take care of your patients",
           "forwhom": "Dentists who attend hospitals and clinics",
           "whatis": "A web platform to monitor dental care and generate a wide range of reports on patients",
@@ -81,7 +81,7 @@
 		    "subject": "Hardware",
         "product_img": "url(../img/retorna.png)",
         "prodpage": {
-          "title": "../img/rtrna.png",
+          "title": "assets/img/rtrna.png",
           "subtitle": "Recycling Machine that helps you take care of the environment",
           "forwhom": "Companies who want to promote your brand through recycling campaigns",
           "whatis": "Collector machines that aim to be a mean of reverse logistics of post consumer packaging, such as PET bottles, aluminum cans, long life, glass, among others",
