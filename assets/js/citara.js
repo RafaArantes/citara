@@ -92,5 +92,13 @@ $(function(){
     })
     $('.showbtn').on('click', function(){
         $('body').addClass('scrollabe');
+        $.ajax({
+        url: 'assets/js/products.json',
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            alert(data);
+        }
+        });
     })
 });
