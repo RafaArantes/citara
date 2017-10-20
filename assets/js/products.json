@@ -7,7 +7,11 @@
         "product_img": "url(../img/smartproduct.png)",
         "prodpage": {
           "title": "../img/smartenergy.png",
-          "subtitle": "Subtitulo Smart Energy"
+          "subtitle": "Subtitulo Smart Energy",
+          "forwhom": "",
+          "whatis": "",
+          "innovate": ""
+          
         }
     }
   },
@@ -19,9 +23,26 @@
         "product_img": "url(../img/devmind.png)",
         "prodpage": {
           "title": "../img/devmind.png",
-          "subtitle": "IDE inteligente para poupar tempo e dor de cabeça"
+          "subtitle": "IDE inteligente para poupar tempo e dor de cabeça",
+          "forwhom": "",
+          "whatis": "",
+          "innovate": ""
         }
     }
+  },
+  {
+    "product": {
+        "class": "devmind",
+        "title": "Devmind.io",
+		    "subject": "Software",
+        "product_img": "url(../img/devmind.png)",
+        "prodpage": {
+          "title": "../img/devmind.png",
+          "subtitle": "IDE inteligente para poupar tempo e dor de cabeça",
+          "forwhom": "",
+          "whatis": "",
+          "innovate": ""
+        }
+    }      
   }
-
 ]
