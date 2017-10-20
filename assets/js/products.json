@@ -10,5 +10,18 @@
           "subtitle": "Subtitulo Smart Energy"
         }
     }
+  },
+  {
+    "product": {
+        "class": "devmind",
+        "title": "Devmind.io",
+		    "subject": "Software",
+        "product_img": "url(../img/devmind.png)",
+        "prodpage": {
+          "title": "../img/devmind.png",
+          "subtitle": "IDE inteligente para poupar tempo e dor de cabeça"
+        }
+    }
   }
+
 ]
