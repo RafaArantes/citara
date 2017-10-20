@@ -62,7 +62,7 @@ $(function(){
             {
                 window.location.hash = o
             }), !1
-        }  
+        }   
     }), 
    
     $(document).on("mousewheel", function(e)
