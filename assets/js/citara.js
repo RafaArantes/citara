@@ -90,6 +90,6 @@ $(function(){
         $(".lateral-menu").toggleClass("activemenu")
     })
     $('.showbtn').on('click', function(){
-        
+        $('body').addClass('scrollabe');
     })
 });
