@@ -97,6 +97,7 @@ $(function(){
           var classes = $(this).attr('class');
           var idx = $(this).index('');
           var dinata = classes.split(" ")[1];
+          var color = data[idx].product.prodpage.bgcolor;
           console.log(data[idx]);
           $(".home").removeClass("activepage")
           $(".prod").addClass("activepage")
@@ -107,7 +108,8 @@ $(function(){
           $(".forwhom").html(data[idx].product.prodpage.forwhom)
           $(".innovate").html(data[idx].product.prodpage.innovate)
           $(".prodheader").html(data[idx].product.prodpage.subtitle)
-          $(".prod").css("background-color", "'+ data[idx].product.prodpage.bgcolor +'")
+          $(".smartheader").css("background-image", "url('" + data[idx].product.prodpage.title +"')")
+          $(".prod").css("background-color", color )
       })
       $.each(data, function(i, products){
         product = products.product;
