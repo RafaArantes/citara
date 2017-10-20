@@ -17,6 +17,22 @@
   },
   {
     "product": {
+        "class": "smartwater",
+        "title": "Smart Water",
+		    "subject": "Internet of Things",
+        "product_img": "url(../img/smartwater.png)",
+        "prodpage": {
+          "title": "../img/smartwtr.png",
+          "subtitle": "Subtitulo Smart Water",
+          "forwhom": "Companies, condominiums and residences.",
+          "whatis": "Citara IoT ecosystem module for control and management of water consumption",
+          "innovate": "Presents real-time financial spending as well as providing insights to minimize water costs."
+          
+        }
+    }
+  },
+  {
+    "product": {
         "class": "devmind",
         "title": "Devmind.io",
 		    "subject": "Software",
