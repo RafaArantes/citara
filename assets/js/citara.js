@@ -26,10 +26,7 @@ $(function(){
     {
         scroll = $(window).scrollTop(), minus = $(".testimonials").offset().top, both = scroll - minus, userparalax = both / 3 + 180, scroll > 0 ? $(".mousepop").fadeOut() : $(".mousepop").fadeIn()
     }),
-    $(".smartenergy").click(function()
-    {
-        $(".home").removeClass("activepage"), $(".prod").addClass("activepage"), $("body").css("overflowY", "visible"), $(".menuitem").removeClass("active"), $(".productsmenu").addClass("active")
-    }),
+
 
     $(".main, .citarahiw, .productsmenu, .teamembers, .contact").click(function()
     {
@@ -95,14 +92,42 @@ $(function(){
     type: "GET",
     dataType: "json",
     success: function (data) {
+      $("body").on('click', ".product" , function()
+      {
+          var classes = $(this).attr('class');
+          var idx = $(this).index('');
+          var dinata = classes.split(" ")[1];
+          console.log(data[idx]);
+          $(".home").removeClass("activepage")
+          $(".prod").addClass("activepage")
+          $("body").css("overflowY", "visible")
+          $(".menuitem").removeClass("active")
+          $(".productsmenu").addClass("active")
+          $(".whatis").html(data[idx].product.prodpage.whatis)
+          $(".forwhom").html(data[idx].product.prodpage.forwhom)
+          $(".innovate").html(data[idx].product.prodpage.innovate)
+          $(".prodheader").html(data[idx].product.prodpage.subtitle)
+      })
       $.each(data, function(i, products){
         product = products.product;
-        console.log(product)
         $('.pdctholder').append('<div class="product ' + product.class +'"><div class="subject"><div class="icon"></div><div class="textsubject font1 fw500">'+ product.subject +'</div></div><div class="producttitle font1 fw700 tt">'+ product.title +'</div></div>')
       });
     }
     });
     $('.showbtn').on('click', function(){
+      if ($('body').hasClass('scrollabe')) {
+        $('body').removeClass('scrollabe')
+        $('.showbtn').html('SHOW MORE')
+      }
+      else {
         $('body').addClass('scrollabe');
+        $('.showbtn').html('SHOW LESS')
+      }
+
+    })
+    $('body').on('click', '.product', function(){
+      classes = $(this).attr('class');
+      dinata = classes.split(" ")[1]
+      console.log(dinata);
     })
 });
