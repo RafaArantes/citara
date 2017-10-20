@@ -445,7 +445,7 @@ body{
 }
 
 .devmind{
-  background-position: top left;
+  background-position: top left !important;
   -webkit-background-size: cover;
   background-size: cover;
   background-image: url(../img/devmind.png);
