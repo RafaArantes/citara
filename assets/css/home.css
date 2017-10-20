@@ -798,6 +798,9 @@ body{
   body{
     overflow-y: visible !important;
   }
+  .scrollabe .home .testimonials{
+    overflow-y: visible;
+}
   .ctralogo {
     background-image: url(../img/citaralogo2.png);
     width: 135px;
