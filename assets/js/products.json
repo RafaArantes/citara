@@ -19,7 +19,7 @@
     "product": {
         "class": "smartwater",
         "title": "Smart Water",
-		    "subject": "Internet of Things",
+	    "subject": "Internet of Things",
         "product_img": "url(../img/smartwater.png)",
         "prodpage": {
           "title": "../img/smartwtr.png",
