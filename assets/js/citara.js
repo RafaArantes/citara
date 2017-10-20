@@ -117,16 +117,42 @@ $(function(){
       });
     }
     });
+
     $.ajax({
     url: 'https://rafaarantes.github.io/citara/assets/js/teammembers.json',
     type: "GET",
     dataType: "json",
-    success: function (data) {
-      $.each(data, function(i, products){
-        console.log(data)
-      });
-    }
-    });    
+      success: function (data) {
+        $.each(data, function(i, team){
+        teamember = team.membro;
+        console.log(teamember)
+        $("#testimonialscreen").append('<div class="testimonal"><div style="background-image: url(' + teamember.avatar + ')" class="avatar"><div class="names"><div class="membername fw700 font1 tt">' + teamember.nome + '</div><div class="memberposition font1 fw500 tt">' + teamember.cargo + '</div></div></div><div class="usertestimonial"><h2 class="usermajor font1 fw500 tt">WE ARE A INNOVATIVE EXPERIMENT</h2><p style="min-height: 120px;" class="userquote font1 fw500">' + teamember.texto + '</p><div class="directional"><div class="prev tac font1 fw500">PREV</div><div class="next tac font1 fw500">NEXT</div></div></div></div>');
+        });
+        $('.testimonal:first').addClass('active')
+        $('body').on('click', '.next', function() {
+          var testimonal = $('.testimonal.active').index('');
+          $('.testimonal').removeClass('active')
+          if(testimonal == 2){
+            $('.testimonal').eq(0).addClass('active')
+          }
+          else {
+            $('.testimonal').eq(testimonal + 1).addClass('active')
+          }
+        })
+        $('body').on('click', '.prev', function() {
+          var testimonal = $('.testimonal.active').index('');
+          $('.testimonal').removeClass('active')
+          if(testimonal == 0){
+            $('.testimonal').eq(2).addClass('active')
+          }
+          
+          else {
+            $('.testimonal').eq(testimonal - 1).addClass('active')
+          }
+        })
+      }
+    });
+
     $('.showbtn').on('click', function(){
       if ($('body').hasClass('scrollabe')) {
         $('body').removeClass('scrollabe')
