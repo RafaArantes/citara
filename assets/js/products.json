@@ -8,9 +8,9 @@
         "prodpage": {
           "title": "../img/smartenergy.png",
           "subtitle": "Subtitulo Smart Energy",
-          "forwhom": "",
-          "whatis": "",
-          "innovate": ""
+          "forwhom": "Companies, condominiums and residences.",
+          "whatis": "Citara IoT ecosystem module for control and management of energy consumption",
+          "innovate": "Presents real-time financial spending as well as providing insights to minimize energy costs."
           
         }
     }
@@ -24,9 +24,9 @@
         "prodpage": {
           "title": "../img/devmind.png",
           "subtitle": "IDE inteligente para poupar tempo e dor de cabeça",
-          "forwhom": "",
-          "whatis": "",
-          "innovate": ""
+          "forwhom": "Developers who want to program anywhere",
+          "whatis": " An on-line IDE that integrates with user repositories and provides users development environment anywhere",
+          "innovate": "Allows users to work collaboratively in real-time, minimizing code conflicts, and increasing development productivity"
         }
     }
   },
