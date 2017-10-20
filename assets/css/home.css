@@ -770,7 +770,7 @@ body{
   opacity: 0;
   left: 0;
 }
-.scrollabe .testimonials{
+.scrollabe .home .testimonials{
     overflow-y: scroll;
 }
 .tinytext2{
