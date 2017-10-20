@@ -117,6 +117,16 @@ $(function(){
       });
     }
     });
+    $.ajax({
+    url: 'https://rafaarantes.github.io/citara/assets/js/teammembers.json',
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+      $.each(data, function(i, products){
+        console.log(data)
+      });
+    }
+    });    
     $('.showbtn').on('click', function(){
       if ($('body').hasClass('scrollabe')) {
         $('body').removeClass('scrollabe')
