@@ -7,7 +7,7 @@
         "product_img": "url(../img/smartproduct.png)",
         "prodpage": {
           "title": "../img/smartenergy.png",
-          "subtitle": "Subtitulo Smart Energy",
+          "subtitle": "Your intelligent assistant in the control of energy consumption",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of energy consumption",
           "innovate": "Presents real-time financial spending as well as providing insights to minimize energy costs"
@@ -22,7 +22,7 @@
         "product_img": "url(../img/smartwater.png)",
         "prodpage": {
           "title": "../img/smartwtr.png",
-          "subtitle": "Subtitulo Smart Water",
+          "subtitle": "Your intelligent assistant in the control of water consumption",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of water consumption",
           "innovate": "Presents real-time financial spending as well as providing insights to minimize water costs"
@@ -37,7 +37,7 @@
         "product_img": "url(../img/smartaccess.png)",
         "prodpage": {
           "title": "../img/smartacs.png",
-          "subtitle": "Subtitulo Smart Access",
+          "subtitle": "Security of your resources without worries",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of Accessible Resources",
           "innovate": "Provides intelligent control over available resources by alerting and identifying suspicious behavior"
@@ -52,7 +52,7 @@
         "product_img": "url(../img/devmind.png)",
         "prodpage": {
           "title": "../img/devmind.png",
-          "subtitle": "IDE inteligente para poupar tempo e dor de cabeça",
+          "subtitle": "Intelligent IDE to save time and headaches",
           "forwhom": "Developers who want to program anywhere",
           "whatis": " An on-line IDE that integrates with user repositories and provides users development environment anywhere",
           "innovate": "Allows users to work collaboratively in real-time, minimizing code conflicts, and increasing development productivity"
