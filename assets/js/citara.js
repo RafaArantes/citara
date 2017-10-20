@@ -107,6 +107,7 @@ $(function(){
           $(".forwhom").html(data[idx].product.prodpage.forwhom)
           $(".innovate").html(data[idx].product.prodpage.innovate)
           $(".prodheader").html(data[idx].product.prodpage.subtitle)
+          $(".smartheader").css("background-image", "url('" + data[idx].product.prodpage.title +"')")
       })
       $.each(data, function(i, products){
         product = products.product;

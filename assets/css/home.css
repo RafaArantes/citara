@@ -443,13 +443,53 @@ body{
 .smartenergy:hover{
   background-image: url(../img/smarthover.png);
 }
-
+.smartwater{
+  background-image: url(../img/smartwater.png);
+  transition: background-image 0.2s ease;
+}
+.smartwater:hover{
+  background-image: url(../img/smartwaterhover.png);
+}
+.smartaccess{
+  background-image: url(../img/smartaccess.png);
+  transition: background-image 0.2s ease;
+}
+.smartaccess:hover{
+  background-image: url(../img/smartaccesshover.png);
+}
+.retorna{
+  background-image: url(../img/retorna.png);
+  transition: background-image 0.2s ease;
+}
+.retorna:hover{
+  background-image: url(../img/retornahover.png);
+}
+.easyodonto{
+  background-image: url(../img/easyodont.png);
+  transition: background-image 0.2s ease;
+}
+.easyodonto:hover{
+  background-image: url(../img/easyodonthover.png);
+}
 .devmind{
   background-position: top left !important;
   -webkit-background-size: cover;
   background-size: cover;
   background-image: url(../img/devmind.png);
   transition: background-image 0.2s ease;
+}
+.devmind:hover{
+  background-image: url(../img/devmindhover.png);
+}
+.retorna .subject{
+  background-color: #49d485;
+  -webkit-box-shadow: 0px 5px 0px #339e62;
+  box-shadow: 0px 5px 0px #339e62;
+}
+.devmind .subject, .easyodonto .subject {
+    background-color: #d8721e;
+    -webkit-box-shadow: 0px 5px 0px #bf5d27;
+    box-shadow: 0px 5px 0px #bf5d27;
 }
 .product:hover{
   margin-left: 20px;
@@ -696,7 +736,8 @@ body{
 .smartheader{
   width: 530px;
   height: 75px;
-  background-image: url(../img/smartenergy.png);
+  -webkit-background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 10px;
 }
