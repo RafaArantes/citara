@@ -61,16 +61,16 @@
   },
   {
     "product": {
-        "class": "devmind",
-        "title": "Devmind.io",
+        "class": "easyodonto",
+        "title": "EasyOdonto",
 		    "subject": "Software",
-        "product_img": "url(../img/devmind.png)",
+        "product_img": "url(../img/easyodonto.png)",
         "prodpage": {
-          "title": "../img/devmind.png",
-          "subtitle": "IDE inteligente para poupar tempo e dor de cabeça",
-          "forwhom": "",
-          "whatis": "",
-          "innovate": ""
+          "title": "../img/easyodonto.png",
+          "subtitle": "Has never been so easy to take care of your patients",
+          "forwhom": "Dentists who attend hospitals and clinics",
+          "whatis": "A web platform to monitor dental care and generate a wide range of reports on patients",
+          "innovate": "Keeps track on patient's medical record and uses inference algorithms to inform the dentist of possible urgente situations"
         }
     }      
   }
