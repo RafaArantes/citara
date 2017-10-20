@@ -2,32 +2,24 @@
   {
     "membro": {
             "nome": "Caio Silva",
-            "avatar": "assets/img/.png",
+            "avatar": "assets/img/caioavatar.png",
             "cargo": "Diretor de Software",
             "texto": ""
      }      
   },
   {
     "membro": {
-            "nome": "Caio Silva",
-            "avatar": "assets/img/.png",
-            "cargo": "Diretor de Software",
+            "nome": "Felipe Duarte",
+            "avatar": "assets/img/felipeavatar.png",
+            "cargo": "Diretor de Hardware",
             "texto": ""
      }      
   },
   {
     "membro": {
-            "nome": "Caio Silva",
+            "nome": "Rafael Arantes",
             "avatar": "assets/img/.png",
-            "cargo": "Diretor de Software",
-            "texto": ""
-     }      
-  },
-  {
-    "membro": {
-            "nome": "Caio Silva",
-            "avatar": "assets/img/.png",
-            "cargo": "Diretor de Software",
+            "cargo": "UI/UX Designer",
             "texto": ""
      }      
   }
