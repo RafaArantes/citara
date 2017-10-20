@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  user-select: none;
   padding: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -843,8 +844,21 @@ body{
   float: left;
   margin-top: 10px;
 }
-
-
+.testimonal{
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 0.8s ease;
+  -o-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+.testimonal.active{
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+}
 @media (max-width: 1129px) {
   body{
     overflow-y: visible !important;
@@ -1038,7 +1052,7 @@ body{
       margin: 20px auto;
   }
   .product {
-    width: 95%;
+    width: 90%;
   }
   .testimonials {
     background-color: #1d2122;
@@ -1069,6 +1083,12 @@ body{
   .hiw, .products, .contactsection{
     padding-left: 50px;
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .titlesections {
+      font-size: 27px;
+      line-height: 27px;
   }
 }
 @media (max-width: 330px) {
