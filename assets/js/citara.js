@@ -67,7 +67,7 @@ $(function(){
    
     $(document).on("mousewheel", function(e)
     {
-        if (!0 === scrollTo && (scrollTo = !1, $(".home").hasClass("activepage"), $(window).width() > 1128), !$('body').hasClass('scrollabe') )
+        if (!0 === scrollTo && (scrollTo = !1, $(".home").hasClass("activepage") && $(window).width() > 1128), !$('body').hasClass('scrollabe') )
         {
             var o = window.location.href;
             if (e.originalEvent.wheelDelta / 120 > 0)
