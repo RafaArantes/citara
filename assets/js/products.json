@@ -10,17 +10,5 @@
           "subtitle": "Subtitulo Smart Energy"
         }
     }
-  },
-  {
-    "product": {
-        "class": "smartenergy",
-        "title": "Smart Energy",
-		    "subject": "Internet of Things",
-        "product_img": "url(../img/smartproduct.png)",
-        "prodpage": {
-          "title": "../img/smartenergy.png",
-          "subtitle": "Subtitulo Smart Energy"
-        }
-    }    
   }
 ]
