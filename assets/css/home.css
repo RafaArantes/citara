@@ -770,6 +770,9 @@ body{
   opacity: 0;
   left: 0;
 }
+.scrollabe .testimonials{
+    overflow-y: scroll;
+}
 .tinytext2{
   width: 420px;
   font-size: 14px;
