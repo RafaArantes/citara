@@ -951,6 +951,9 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-left: -25px;
     position: fixed;
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+    background-image: url(../img/menuresponsive.png);
     margin-top: -25px;
     top: 50%;
     z-index: 129381203;
