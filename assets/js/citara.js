@@ -46,6 +46,7 @@ $(function(){
    
     $(".ball, .menuitem").click(function()
     {
+        $('body').removeClass('scrollabe');
         if (!0 === scrollClick)
         {
             scrollClick = !1, setTimeout(function()
