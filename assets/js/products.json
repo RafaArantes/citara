@@ -10,8 +10,7 @@
           "subtitle": "Subtitulo Smart Energy",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of energy consumption",
-          "innovate": "Presents real-time financial spending as well as providing insights to minimize energy costs."
-          
+          "innovate": "Presents real-time financial spending as well as providing insights to minimize energy costs"
         }
     }
   },
@@ -26,8 +25,22 @@
           "subtitle": "Subtitulo Smart Water",
           "forwhom": "Companies, condominiums and residences.",
           "whatis": "Citara IoT ecosystem module for control and management of water consumption",
-          "innovate": "Presents real-time financial spending as well as providing insights to minimize water costs."
-          
+          "innovate": "Presents real-time financial spending as well as providing insights to minimize water costs"
+        }
+    }
+  },
+  {
+    "product": {
+        "class": "smartaccess",
+        "title": "Smart Access",
+	    "subject": "Internet of Things",
+        "product_img": "url(../img/smartaccess.png)",
+        "prodpage": {
+          "title": "../img/smartacs.png",
+          "subtitle": "Subtitulo Smart Access",
+          "forwhom": "Companies, condominiums and residences.",
+          "whatis": "Citara IoT ecosystem module for control and management of Accessible Resources",
+          "innovate": "Provides intelligent control over available resources by alerting and identifying suspicious behavior"
         }
     }
   },
