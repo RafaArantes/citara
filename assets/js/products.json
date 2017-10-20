@@ -6,6 +6,7 @@
 		    "subject": "Internet of Things",
         "product_img": "url(../img/smartproduct.png)",
         "prodpage": {
+          "bgcolor": "#470da8",
           "title": "assets/img/smartenergy.png",
           "subtitle": "Your intelligent assistant in the control of energy consumption",
           "forwhom": "Companies, condominiums and residences.",
@@ -21,6 +22,7 @@
 	    "subject": "Internet of Things",
         "product_img": "url(../img/smartwater.png)",
         "prodpage": {
+          "bgcolor": "#470da8",
           "title": "assets/img/smartwtr.png",
           "subtitle": "Your intelligent assistant in the control of water consumption",
           "forwhom": "Companies, condominiums and residences.",
@@ -36,6 +38,7 @@
 	    "subject": "Internet of Things",
         "product_img": "url(../img/smartaccess.png)",
         "prodpage": {
+          "bgcolor": "#470da8",
           "title": "assets/img/smartacs.png",
           "subtitle": "Security of your resources without worries",
           "forwhom": "Companies, condominiums and residences.",
@@ -51,6 +54,7 @@
 		    "subject": "Software",
         "product_img": "url(../img/devmind.png)",
         "prodpage": {
+          "bgcolor": "#ec7523",
           "title": "assets/img/devmind2.png", 
           "subtitle": "Intelligent IDE to save time and headaches",
           "forwhom": "Developers who want to program anywhere",
@@ -66,6 +70,7 @@
 		    "subject": "Software",
         "product_img": "url(../img/easyodonto.png)",
         "prodpage": {
+          "bgcolor": "#ec7523",
           "title": "assets/img/easyodonto.png",
           "subtitle": "Has never been so easy to take care of your patients",
           "forwhom": "Dentists who attend hospitals and clinics",
@@ -81,6 +86,7 @@
 		    "subject": "Hardware",
         "product_img": "url(../img/retorna.png)",
         "prodpage": {
+          "bgcolor": "#4caf50",
           "title": "assets/img/rtrna.png",
           "subtitle": "Recycling Machine that helps you take care of the environment",
           "forwhom": "Companies who want to promote your brand through recycling campaigns",
