@@ -10,7 +10,7 @@
   {
     "membro": {
             "nome": "Felipe Duarte",
-            "avatar": "assets/img/felipeavatar.jpg",
+            "avatar": "assets/img/felipeavatar.jpg", 
             "cargo": "Diretor de Hardware",
             "texto": "Graduated in Electronic Engineering from the University of Brasília. Currently Manager of Hardware at Citara Labs. Has experience in programming C / AVR / ARM / C # .NET / Swift / Java, Embedded Systems, Mechatronics, Automation, Computational Vision and Electronic Circuits Design."
      }      
