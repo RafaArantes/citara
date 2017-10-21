@@ -143,7 +143,7 @@ $(function(){
           var testimonal = $('.testimonal.active').index('');
           $('.testimonal').removeClass('active')
           if(testimonal == 0){
-            $('.testimonal').eq(2).addClass('active')
+            $('.testimonal').eq(3).addClass('active')
           }
           
           else {
