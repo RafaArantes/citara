@@ -1100,7 +1100,7 @@ body{
       height: 40px;
     }  
 }
-@media (max-width: 380px) { 
+@media(max-width: 380px){
   .titlesections {
       font-size: 27px;
       line-height: 27px;
