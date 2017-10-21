@@ -132,7 +132,7 @@ $(function(){
         $('body').on('click', '.next', function() {
           var testimonal = $('.testimonal.active').index('');
           $('.testimonal').removeClass('active')
-          if(testimonal == 2){
+          if(testimonal == 3){
             $('.testimonal').eq(0).addClass('active')
           }
           else {
