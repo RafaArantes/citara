@@ -1104,6 +1104,9 @@ body{
   .menubutton{
       z-index: 128390182093812;
   }
+  .mail{
+      font-size: 34px;
+  }
   .titlesections{   
       font-size: 36px;
       line-height: 36px;
