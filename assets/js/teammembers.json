@@ -22,5 +22,13 @@
             "cargo": "UI/UX Designer",
             "texto": "Passionate about the art of making things look pretty(aka. Design), and hungry for a daily basis challenge, i found myself in the middle of something incredible, were the quality and performance is taken as a major issue in a place called Citara Labs"
      }      
+  },
+   {
+    "membro": {
+            "nome": "Lucas Meine",
+            "avatar": "assets/img/felipeavatar.jpg", 
+            "cargo": "Software developer",
+            "texto": "Here in Citara, we think that technology is supposed to make people's lives better. We are always improving ourselves to overcome new challenges and to do our best in every creation."
+     }      
   }
 ]
