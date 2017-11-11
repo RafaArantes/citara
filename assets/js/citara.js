@@ -110,6 +110,8 @@ $(function(){
           $(".prodheader").html(data[idx].product.prodpage.subtitle)
           $(".smartheader").css("background-image", "url('" + data[idx].product.prodpage.title +"')")
           $(".prod").css("background-color", color )
+          $(".prodprodheadersub").css("color", color )
+          
       })
       $.each(data, function(i, products){
         product = products.product;
