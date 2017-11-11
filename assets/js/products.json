@@ -54,7 +54,7 @@
 		    "subject": "Software",
         "product_img": "url(../img/devmind.png)",
         "prodpage": {
-          "bgcolor": "#ec7523",
+          "bgcolor": "#43b6b5",
           "title": "assets/img/devmind2.png", 
           "subtitle": "Intelligent IDE to save time and headaches",
           "forwhom": "Developers who want to program anywhere",
