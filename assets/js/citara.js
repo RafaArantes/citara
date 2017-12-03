@@ -134,7 +134,7 @@ $(function(){
         $('body').on('click', '.next', function() {
           var testimonal = $('.testimonal.active').index('');
           $('.testimonal').removeClass('active')
-          if(testimonal == 3){
+          if(testimonal == 4){
             $('.testimonal').eq(0).addClass('active')
           }
           else {
@@ -145,7 +145,7 @@ $(function(){
           var testimonal = $('.testimonal.active').index('');
           $('.testimonal').removeClass('active')
           if(testimonal == 0){
-            $('.testimonal').eq(3).addClass('active')
+            $('.testimonal').eq(4).addClass('active')
           }
           
           else {
