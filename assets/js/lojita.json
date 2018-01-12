@@ -1,5 +1,4 @@
 {
-    "_id" : ObjectId("5a57a90c601a2b7f24171099"),
 	"balance" : NumberLong(0),
 	"businessvatid" : "",
 	"currency" : "",
@@ -15,7 +14,7 @@
 	},
 	"deleted" : false,
 	"delinquent" : false,
-	"desc" : "",
+	"desc" : "", 
 	"discount" : null,
 	"email" : "teste@gmail.com",
 	"id" : "cus_C7PMBU9y18lWUW",
