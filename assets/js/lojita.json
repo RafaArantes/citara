@@ -1,8 +1,6 @@
 {
-	"balance" : NumberLong(0),
 	"businessvatid" : "",
 	"currency" : "",
-	"created" : NumberLong(1515694347),
 	"defaultsource" : {
 		"bankaccount" : null,
 		"bitcoinreceiver" : null,
@@ -14,7 +12,7 @@
 	},
 	"deleted" : false,
 	"delinquent" : false,
-	"desc" : "", 
+	"desc" : "",  
 	"discount" : null,
 	"email" : "teste@gmail.com",
 	"id" : "cus_C7PMBU9y18lWUW",
@@ -44,10 +42,8 @@
 					"country" : "",
 					"currency" : "",
 					"customer" : {
-						"balance" : NumberLong(0),
 						"businessvatid" : "",
 						"currency" : "",
-						"created" : NumberLong(0),
 						"defaultsource" : null,
 						"deleted" : false,
 						"delinquent" : false,
