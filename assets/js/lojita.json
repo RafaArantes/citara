@@ -98,5 +98,105 @@
 		},
 		"values" : [ ]
 	}
+},
+{
+	"businessvatid" : "",
+	"currency" : "",
+	"defaultsource" : {
+		"bankaccount" : null,
+		"bitcoinreceiver" : null,
+		"card" : null,
+		"deleted" : false,
+		"id" : "card_1BjAXOESndYnuyj9dlZ26URl", 
+		"sourceobject" : null,
+		"type" : ""
+	},
+	"deleted" : false,
+	"delinquent" : false,
+	"desc" : "",  
+	"discount" : null,
+	"email" : "teste@gmail.com",
+	"id" : "cus_C7PMBU9y18lWUW",
+	"live" : false,
+	"meta" : {
+		
+	},
+	"shipping" : null,
+	"sources" : {
+		"listmeta" : {
+			"count" : 1,
+			"more" : false,
+			"url" : "/v1/customers/cus_C7PMBU9y18lWUW/sources"
+		},
+		"values" : [
+			{
+				"bankaccount" : null,
+				"bitcoinreceiver" : null,
+				"card" : {
+					"address1" : "",
+					"address1check" : "",
+					"address2" : "",
+					"brand" : "Visa",
+					"cvccheck" : "pass",
+					"cardcountry" : "US",
+					"city" : "",
+					"country" : "",
+					"currency" : "",
+					"customer" : {
+						"businessvatid" : "",
+						"currency" : "",
+						"defaultsource" : null,
+						"deleted" : false,
+						"delinquent" : false,
+						"desc" : "",
+						"discount" : null,
+						"email" : "",
+						"id" : "cus_C7PMBU9y18lWUW",
+						"live" : false,
+						"meta" : {
+							
+						},
+						"shipping" : null,
+						"sources" : null,
+						"subs" : null
+					},
+					"default" : false,
+					"deleted" : false,
+					"description" : "",
+					"dynlastfour" : "",
+					"fingerprint" : "vNpvoR9J1HVDP5OY",
+					"funding" : "unknown",
+					"id" : "card_1BjAXOESndYnuyj9dlZ26URl",
+					"iin" : "",
+					"issuer" : "",
+					"lastfour" : "1111",
+					"meta" : {
+						
+					},
+					"month" : 12,
+					"name" : "",
+					"recipient" : null,
+					"state" : "",
+					"threedsecure" : null,
+					"tokenizationmethod" : "",
+					"year" : 2018,
+					"zip" : "94301",
+					"zipcheck" : "pass"
+				},
+				"deleted" : false,
+				"id" : "card_1BjAXOESndYnuyj9dlZ26URl",
+				"sourceobject" : null,
+				"type" : "card"
+			}
+		]
+	},
+	"subs" : {
+		"listmeta" : {
+			"count" : 0,
+			"more" : false,
+			"url" : "/v1/customers/cus_C7PMBU9y18lWUW/subscriptions"
+		},
+		"values" : [ ]
+	}
 }
 ]
