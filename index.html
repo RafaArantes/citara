@@ -12,31 +12,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ScrollToPlugin.min.js"></script>
     <script src="assets/js/url-tld.min.js" charset="utf-8"></script>
     <script src="assets/js/jquery.mousewheel.min.js" charset="utf-8"></script>
+    <script src="assets/js/jsonConstants.js" charset="utf-8"></script>
+    <script src="assets/js/appendable.js" charset="utf-8"></script>
+    <script src="assets/js/navigation.js" charset="utf-8"></script>
     <script src="assets/js/citara.js" charset="utf-8"></script>
+    <script src="assets/js/scroller.js" charset="utf-8"></script>
+    <script src="assets/js/ajax.js" charset="utf-8"></script>
 
     <title>Citara Internet of Things</title>
   </head>
   <body>
-    <div class="lateral-responsive-menu"></div>
-    <div class="lateral-menu">
-      <ul class="lateral-ul">
-        <li href="#heroscreen" style="background-image: url(assets/img/home.png)" class="menuitem main heroscreen active">
-          <div class="text font1 fw500"></div>
-        </li>
-        <li href="#hiwscreen" style="background-image: url(assets/img/hiw.png)" class="menuitem citarahiw hiwscreen">
-
-        </li>
-        <li href="#productscreen" style="background-image: url(assets/img/producticon.png)" class="menuitem productscreen productsmenu">
-
-        </li>
-        <li href="#testimonialscreen" style="background-image: url(assets/img/testimonials.png)" class="menuitem testimonialscreen teamembers">
-
-        </li>
-        <li style="background-image: url(assets/img/contact.png)" href="#contactscreen" class="menuitem contactscreen contact">
-        </li>
-      </ul>
-      <div style="display: none;" class="ctralogo"></div>
-    </div>
     <div class="menubutton"></div>
     <div class="socialmedia">
       <div class="share"></div>
@@ -50,34 +35,35 @@
           <div class="scrollwhell"></div>
         </div>
       </div>
-      <div id="heroscreen" class="heroscreen hero screenactive screen">
+      <div class="homescreeens">
+      <div id="heroscreen" class="screen0 heroscreen hero screenactive screen">
         <div class="herocontent">
-          <p class="herosubtitle tt">Beyond technology</p>
+          <p class="herosubtitle tt">something awesome</p>
           <div class="titleimg"></div>
-          <p class="herosub fw500 font2">Hardware and software that fits your needs.</p>
+          <p class="herosub fw500 font2">Take a trip, and learn how we keep extreme quality in our products</p>
         </div>
       </div>
-      <div id="hiwscreen" class="hiwscreen hiw screen">
-        <h2 class="hiwtitle titlesections font1 fw700 tt">Innovation & performance</h2>
-        <p class="hiwsub subtitle font1 fw500">is what we do. Browse through.</p>
+      <div id="hiwscreen" class="screen1 hiwscreen hiw screen">
+        <h2 class="hiwtitle titlesections font1 fw700 tt">HOW CITARA WORKS</h2>
+        <p class="hiwsub subtitle font1 fw500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         <div class="notebook">
           <div class="cards">
             <div class="card">
-              <h3 class="font1 fw700 number">HW</h3>
-              <p class="titlehiw font1 fw700">Hardware</p>
-              <span class="hiwdesc font1 fw300">Get your projects out of the paper. Take control of your environment using flexible and scalable hardware.</span>
+              <h3 class="font1 fw700 number">01</h3>
+              <p class="titlehiw font1 fw700">TITULO DA INFORMAÇÃO</p>
+              <span class="hiwdesc font1 fw300">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</span>
               <p class="ctp font1 fw500">CONTINUE TO PRODUCTS</p>
             </div>
             <div class="card">
-              <h3 class="font1 fw700 number">SW</h3>
-              <p class="titlehiw font1 fw700">Software</p>
-              <span class="hiwdesc font1 fw300">We offer solutions for your daily puzzles. Our sotware is specially designed for your business needs and lets you focus on the real deal.</span>
+              <h3 class="font1 fw700 number">02</h3>
+              <p class="titlehiw font1 fw700">TITULO DA INFORMAÇÃO</p>
+              <span class="hiwdesc font1 fw300">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</span>
               <p class="ctp font1 fw500">CONTINUE TO PRODUCTS</p>
             </div>
             <div class="card">
-              <h3 class="font1 fw700 number">IoT</h3>
-              <p class="titlehiw font1 fw700">Internet of Things</p>
-              <span class="hiwdesc font1 fw300">Solutions that explore intelligence algorithms and take advantage off cutting edge hardware and software to serve the most exigent demands.</span>
+              <h3 class="font1 fw700 number">03</h3>
+              <p class="titlehiw font1 fw700">TITULO DA INFORMAÇÃO</p>
+              <span class="hiwdesc font1 fw300">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</span>
               <p class="ctp font1 fw500">CONTINUE TO PRODUCTS</p>
             </div>
             <div style="clear: both;">
@@ -86,63 +72,67 @@
           </div>
         </div>
       </div>
-      <div id="productscreen" class="productscreen products screen">
+      <div id="productscreen" class="screen2 productscreen products screen">
         <h2 class="titlesections font1 fw700 tt">OUR PRODUCTS</h2>
         <div class="pdctholder">
         </div>
         <div class="showbtn font1 fw700 tt">SHOW MORE</div>
       </div>
-      <div id="testimonialscreen" class="testimonialscreen testimonials screen">
-
+      <div id="testimonialscreen" class="screen3 testimonialscreen testimonials screen">
       </div>
-      <div id="contactscreen" class="contactscreen contactsection screen">
+      <div id="contactscreen" class="screen4 screen contactscreen contactsection">
         <p class="subtitlecontact font1 fw700 tt">Get in contact</p>
-        <h2 class="titlesections mail font1 fw700 tt">CONTACT@CITARA.IO</h2>
+        <h2 class="titlesections font1 fw700 tt">CONTATO@CITARA.IO</h2>
         <div class="contact">
           <div class="contactitem">
             <h4 class="contactitemtitle font1 fw700 tt">PHONE</h4>
             <p class="contactinfo fw700 font1 tt">61 3556 4496</p>
           </div>
           <div class="contactitem">
-            <h4 class="contactitemtitle font1 fw700 tt">ADDRESS</h4>
-            <p class="contactinfo fw700 font1 tt">Sia Trecho 3, 625 Sala 106C</p>
+            <h4 class="contactitemtitle font1 fw700 tt">ADRESS</h4>
+            <p class="contactinfo fw700 font1 tt">SCLRN 705 BL E ENT 34</p>
           </div>
           <div class="contactitem">
             <h4 class="contactitemtitle font1 fw700 tt">PHONE 2</h4>
-            <p class="contactinfo fw700 font1 tt">61 99171-6963</p>
+            <p class="contactinfo fw700 font1 tt">61 3556 4442</p>
           </div>
           <div class="contactitem">
             <h4 class="contactitemtitle font1 fw700 tt">CITY</h4>
-            <p class="contactinfo fw700 font1 tt">BRASÍLIA, DF</p>
+            <p class="contactinfo fw700 font1 tt">BRASILIA, DF</p>
           </div>
         </div>
       </div>
+      </div>
       <div class="balls">
-        <div href="#heroscreen" class="heroscreen ball screenactive"><div class="text font1 fw500">Home</div></div>
+        <div name="screen0" class="heroscreen ball active"><div class="text font1 fw500">Topo</div></div>
         <div class="line"></div>
-        <div href="#hiwscreen" class="hiwscreen ball"><div class="text font1 fw500">Our work</div></div>
+        <div name="screen1" class="hiwscreen ball"><div class="text font1 fw500">How we Work</div></div>
         <div class="line"></div>
-        <div href="#productscreen" class=" productscreen ball"><div class="text font1 fw500">Products</div></div>
+        <div name="screen2" class=" productscreen ball"><div class="text font1 fw500">Products</div></div>
         <div class="line"></div>
-        <div href="#testimonialscreen" class="testimonialscreen ball"><div class="text font1 fw500">Team Members</div></div>
+        <div name="screen3" class="testimonialscreen ball"><div class="text font1 fw500">Team Members</div></div>
         <div class="line"></div>
-        <div href="#contactscreen" class="contactscreen ball"><div class="text font1 fw500">Contact</div></div>
+        <div name="screen4" class="contactscreen ball"><div class="text font1 fw500">Contact</div></div>
       </div>
     </div>
     <div class="prod">
+      <div class="returnToHome">
+        <div class="backIcon"></div>
+        <p class="returnToHomeText font2 fw500">Return to Home</p>
+      </div>
       <div class="herocontent">
-        <div class="headersubtitle prodheadersub">Product Case</div>
+        <div class="headersubtitle">Product Case</div>
         <div class="smartheader"></div>
-        <p class="headersub prodheader fw500 font2">Take a trip, and learn how we keep extreme quality in our products</p>
+        <p class="headersub fw500 font2">Take a trip, and learn how we keep extreme quality in our products</p>
       </div>
       <div class="prodinfo">
         <div class="tbgn ballhr active">
-          <p class="option font1 fw900">For Whom?</p>
+          <p class="option font1 fw900">For whom</p>
           <span class="tinytext forwhom font1 fw500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
         </div>
         <hr class="hline">
         <div class="ballhr">
-          <p class="option font1 fw900">What Is?</p>
+          <p class="option font1 fw900">What Is</p>
           <span class="tinytext whatis font1 fw500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
         </div>
         <hr class="hline">
