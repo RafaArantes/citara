@@ -744,6 +744,7 @@ body {
   position: absolute;
   visibility: hidden;
   transition: opacity 0.4s ease;
+  z-index: 2;
   background-color: #470da8;
   background-image: url(../img/bgprod.png);
   background-repeat: no-repeat;
@@ -1326,7 +1327,7 @@ body {
 }
 @media (max-width: 420px) {
   .menubutton {
-    z-index: 128390182093812;
+    z-index: 1;
   }
   .titlesections {
     font-size: 26px;
