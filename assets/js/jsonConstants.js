@@ -38,6 +38,14 @@ const teamMembers = [
             "cargo": "Software developer",
             "texto": "Here in Citara, we think that technology is supposed to make people's lives better. We are always improving ourselves to overcome new challenges and to do our best in every creation."
      }
+  },
+   {
+    "membro": {
+            "nome": "Nicolas Meinen",
+            "avatar": "assets/img/meinenavatar.jpg",
+            "cargo": "Software developer",
+            "texto": "This may be a cliche, but citara is a dream that came true. A company that always follows the state of the art for development stuff and that can always make everyone happy. How cool is that?"
+     }
   }
 ]
 const productsArray = [
