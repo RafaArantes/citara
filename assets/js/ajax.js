@@ -22,11 +22,11 @@
   }
 
   function prev(test){
-    test == 0 ? testimonialState(4) : testimonialState(test - 1)
+    test == 0 ? testimonialState(5) : testimonialState(test - 1)
   }
 
   function next(test){
-    test == 4 ? testimonialState(0) : testimonialState(test + 1)
+    test == 5 ? testimonialState(0) : testimonialState(test + 1)
   }
 
   $(function(){
