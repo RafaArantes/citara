@@ -39,7 +39,6 @@
 
     teamMembers.forEach(x => {
       const member = x.membro;
-      console.log(member);
       appendableMembers(member)
     })
 

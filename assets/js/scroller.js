@@ -38,6 +38,18 @@ $(function() {
     screenToEnterObject.index() == 3 ? whiteScroller() : blackScroller()
   }
 
+  const letter = result => {
+    $('.pdctholder').html('')
+    result.forEach(x => appendable(x.product))
+  }
+
+  function filterByProductSubject(array, equals){
+    const result = array.filter(x => x.product.subject == equals)
+
+    if(equals.length > 0) letter(result)
+    else letter(equals)
+  }
+
   function scrollEventOut(whereToScroll, index) {
     classRemoval();
     let provideEq = $(".screen").eq(index);
@@ -87,10 +99,15 @@ $(function() {
   // Products Sorting
 
   $('.ctp').on('click', function(){
-    const eqOfSelectedBall = $('.screen').eq(2)
-    const functionToPerformBall = curriedScrollExecuter("animate-out", 1, eqOfSelectedBall, "animate-in-bottom")
+
+    const functionToPerformBall = curriedScrollExecuter("animate-out", 1, $('.screen').eq(2), "animate-in-bottom")
     if(scrollTo) functionToPerformBall()
+
+    const productFilter = $(this).attr('name')
+    filterByProductSubject(productsArray, productFilter)
+
   })
+
 
   // Mouse Wheel Scroller
 
@@ -132,6 +149,7 @@ $(function() {
   $('.showbtn').click(function(){
     scrollTo = !scrollTo
     scrollTo ? disableProductScroll() : enableProductScroll()
+    letter(productsArray)
   })
 
   function ifIsMobile() {
