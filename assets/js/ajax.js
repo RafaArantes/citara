@@ -21,6 +21,7 @@
     ".prev": prev
   }
 
+
   function prev(test){
     test == 0 ? testimonialState(5) : testimonialState(test - 1)
   }
@@ -42,10 +43,29 @@
       appendableMembers(member)
     })
 
+    let mouseIsOver = true
+
+    $('body').on( 'mouseover', '.testimonal', function(){
+      mouseIsOver = false
+    })
+
+    $('body').on( 'mouseout', '.testimonal', function(){
+      mouseIsOver = true
+    })
+
+    setInterval(function () {
+      if(mouseIsOver) {
+        const testimonal = $('.testimonal.active').index('');
+        $('.testimonal').removeClass('active')
+        executor['.prev'](testimonal)
+      }
+    }, 5000);
+
     $('body').on('click', '.testimonialButton', function() {
       const elementDom = $(this).attr('class').split(' ').find(x => x == 'prev' || x == 'next')
       const elementDomClass = '.'+elementDom
       const testimonal = $('.testimonal.active').index('');
+      console.log(testimonal);
 
       $('.testimonal').removeClass('active')
       executor[elementDomClass](testimonal)

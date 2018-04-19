@@ -36,8 +36,6 @@ $(function() {
     ballScrollItem(ballToAct)
 
     screenToEnterObject.index() == 3 ? whiteScroller() : blackScroller()
-
-
   }
 
   function scrollEventOut(whereToScroll, index) {
@@ -85,6 +83,14 @@ $(function() {
     }
   });
 
+
+  // Products Sorting
+
+  $('.ctp').on('click', function(){
+    const eqOfSelectedBall = $('.screen').eq(2)
+    const functionToPerformBall = curriedScrollExecuter("animate-out", 1, eqOfSelectedBall, "animate-in-bottom")
+    if(scrollTo) functionToPerformBall()
+  })
 
   // Mouse Wheel Scroller
 
