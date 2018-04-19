@@ -44,7 +44,7 @@ const teamMembers = [
             "nome": "Nicolas Meinen",
             "avatar": "assets/img/meinenavatar.jpg",
             "cargo": "Software developer",
-            "texto": "This may be a cliche, but citara is a dream that came true. A company that always follows the state of the art for development stuff and that can always make everyone happy. How cool is that?"
+            "texto": "They didn't let me write funny stuff, so here's a love story.This may be a cliche, but citara is a dream that came true. A company that always follows the state of the art for development stuff and that can always make everyone happy. How cool is that?"
      }
   }
 ]
