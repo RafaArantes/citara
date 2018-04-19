@@ -3,7 +3,7 @@ const teamMembers = [
     "membro": {
             "nome": "Caio Silva",
             "avatar": "assets/img/caioavatar.jpg",
-            "cargo": "Diretor de Software",
+            "cargo": "Head of Software",
             "texto": "The daily life of Citara Labs is to innovate, at all times new ideas arise and are put into practice. We are a team of lunatics for quality and performance, and this can be seen in our solutions."
      }
   },
@@ -11,7 +11,7 @@ const teamMembers = [
     "membro": {
             "nome": "Felipe Duarte",
             "avatar": "assets/img/felipeavatar.jpg",
-            "cargo": "Diretor de Hardware",
+            "cargo": "Head of Hardware",
             "texto": "Graduated in Electronic Engineering from the University of Brasília. Currently Manager of Hardware at Citara Labs. Has experience in programming C / AVR / ARM / C # .NET / Swift / Java, Embedded Systems, Mechatronics, Automation, Computational Vision and Electronic Circuits Design."
      }
   },
