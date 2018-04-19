@@ -162,7 +162,6 @@ $(function() {
   function windowSize(){
     window.innerWidth < 821 ? ifIsMobile() : scrollTo = true
   }
-  console.log(window.innerWidth)
   windowSize()
 
   window.onresize = function() {

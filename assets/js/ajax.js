@@ -2,7 +2,6 @@
     $(".whatis").html(whatis);
     $(".forwhom").html(forwhom);
     $(".innovate").html(innovate);
-    console.log(whatis)
     $(".prodheader").html(subtitle);
   }
 
@@ -64,8 +63,6 @@
       const elementDom = $(this).attr('class').split(' ').find(x => x == 'prev' || x == 'next')
       const elementDomClass = '.'+elementDom
       const testimonal = $('.testimonal.active').index('');
-      console.log(testimonal);
-
       $('.testimonal').removeClass('active')
       executor[elementDomClass](testimonal)
     })
