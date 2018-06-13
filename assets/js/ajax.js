@@ -3,6 +3,7 @@
     $(".forwhom").html(forwhom);
     $(".innovate").html(innovate);
     $(".prodheader").html(subtitle);
+    $(".headersub").html(subtitle);
   }
 
   function cssDomManipulation(url, color) {
