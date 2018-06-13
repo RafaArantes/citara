@@ -116,7 +116,7 @@ const productsArray = [
   {
     "product": {
         "class": "easyodonto",
-        "title": "EasyOdonto",
+        "title": "Florence",
 		    "subject": "Software",
         "product_img": "url(../img/easyodonto.png)",
         "prodpage": {
